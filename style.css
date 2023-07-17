@@ -69,7 +69,6 @@ nav a {
     display: flex;
     width: 585px;
     flex-direction: column;
-    flex-shrink: 0;
     font-size: 18px;
     color:#757575;
 }
@@ -164,3 +163,58 @@ footer {
 .social-links {
     margin-right: 10px;
 }
+.hide {
+    display: none;
+}
+
+
+
+/* responsive */
+@media screen and (max-width:576px) {
+    .skills-container,
+    .resume-container,
+    footer, .about-info-container,
+    nav, nav>ul, .banner {
+        flex-direction: column;
+    }
+    #what-des {
+        padding: 10px;
+    }
+    .resume-container {
+        padding: 10px;
+    }
+    footer, .about {
+        padding: 10px;
+    }
+    .footer-column {
+        width: 100%;
+    }
+    .contact input[type="text"] {
+        width: 80%;
+    }
+    .contact input[type="email"] {
+        width: 80%;
+    }
+    
+    .contact> textarea {
+        width: 80%;
+    } 
+    .banner-des {
+        width: 100%;
+    }
+    .banner {
+        padding: 20px;
+    }
+    nav > ul {
+        gap: 15px;
+    }
+    .banner .profile-pic {
+        width: 100%;
+    }
+    .nav-title {
+        margin: 10px;
+    }
+    .banner-greeting {
+        margin-top: 10px;
+    }
+}   
